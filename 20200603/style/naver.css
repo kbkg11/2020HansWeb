@@ -1,0 +1,44 @@
+.webtoon {
+  font-size: 30px;
+}
+.g {
+  background-color: ghostwhite;
+  padding: 20px 0px 20px 0px;
+  border-top: 1px solid rgb(202, 194, 194);
+  border-bottom: 1px solid rgb(202, 194, 194);
+}
+
+.b {
+  padding-bottom: 1%;
+  border-bottom: 1px solid rgb(202, 194, 194);
+}
+.c {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.b,
+.c {
+  padding-left: 1%;
+}
+.g,
+.b,
+.c {
+  margin-right: 40%;
+  margin-left: 20%;
+  border-bottom: 1px solid rgb(202, 194, 194);
+}
+
+.gr {
+  color: grey;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.add {
+  color: rgb(29, 230, 29);
+}

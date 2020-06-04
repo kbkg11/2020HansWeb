@@ -1,0 +1,9 @@
+.tb {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 30px 30px;
+}
+
+.tb td {
+  border: solid 1px;
+}

@@ -1,0 +1,16 @@
+table.type01 {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+table.type01 td {
+  font-weight: bold;
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.grey {
+  background-color: gray;
+  width: 100px;
+}

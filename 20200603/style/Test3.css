@@ -1,0 +1,13 @@
+.tb {
+  margin: 30px 30px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tb td {
+  border: solid 1px rgb(104, 102, 102);
+  font-weight: bold;
+}
+.grey {
+  background-color: rgb(158, 154, 154);
+}
