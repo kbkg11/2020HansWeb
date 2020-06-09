@@ -1,44 +1,93 @@
-.webtoon {
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+#AP {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div {
+  letter-spacing: 2px;
+  line-height: 90%;
+  font-family: "Oswald", sans-serif;
+  border: 8px solid black;
+  padding-top: 40px;
+  padding-left: 35px;
+  width: 430px;
+  height: 460px;
+
+  align-items: center;
+}
+
+.div2 {
+  line-height: 70%;
+  text-align: center;
+  border: 14px solid black;
+  width: 453px;
+  height: 500px;
+}
+
+.blue {
+  color: rgb(116, 135, 177);
+}
+
+#inline {
+  display: inline;
+  color: black;
+}
+
+#yellow {
+  margin-left: 150px;
   font-size: 30px;
-}
-.g {
-  background-color: ghostwhite;
-  padding: 20px 0px 20px 0px;
-  border-top: 1px solid rgb(202, 194, 194);
-  border-bottom: 1px solid rgb(202, 194, 194);
+  color: rgb(255, 174, 0);
 }
 
-.b {
-  padding-bottom: 1%;
-  border-bottom: 1px solid rgb(202, 194, 194);
-}
-.c {
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-.b,
-.c {
-  padding-left: 1%;
-}
-.g,
-.b,
-.c {
-  margin-right: 40%;
-  margin-left: 20%;
-  border-bottom: 1px solid rgb(202, 194, 194);
-}
-
-.gr {
+#grey {
+  font-size: 25px;
   color: grey;
 }
-a:link {
+#dog {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 730px;
+  right: 44%;
+
+  border: 5px solid white;
+  border-radius: 70%;
+}
+
+#ghas {
+  margin-bottom: 60px;
+}
+
+#Follow {
+  margin-right: 40%;
+  color: aliceblue;
+  background-color: rgb(59, 59, 230);
+  padding: 13px 35px 13px 35px;
+  border-radius: 10%;
+}
+#btn {
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 13px 35px 13px 35px;
+  color: aliceblue;
+  background-color: rgb(90, 90, 233);
+  border-radius: 10%;
+}
+
+.btn:hover {
+  background: blue;
+}
+
+.btn2:hover {
+  color: #fff;
+}
+#btn2 {
+  box-shadow: 1px 1px 1px 1px gray;
+
+  padding: 13px 35px 13px 35px;
+  border-radius: 10%;
   color: blue;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.add {
-  color: rgb(29, 230, 29);
+  background-color: rgb(154, 216, 235);
 }

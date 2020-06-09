@@ -1,0 +1,32 @@
+#Pond {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+}
+#star {
+  display: flex;
+  justify-content: space-around;
+}
+
+#two {
+  display: flex;
+  border: 13px solid black;
+  width: 500px;
+  height: 600px;
+  flex-direction: column;
+}
+#dog {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  border: 5px solid white;
+  justify-self: center;
+  align-self: center;
+}
