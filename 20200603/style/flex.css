@@ -1,0 +1,77 @@
+.div1 {
+  font-family: "Roboto", sans-serif;
+  width: 430px;
+  height: 700px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin-left: 700px;
+  margin-top: 50px;
+  border-radius: 10%;
+  border: 1px solid rgb(143, 170, 170);
+  box-shadow: 1px 1px 2px 6px rgb(143, 170, 170);
+  box-shadow: 0px 0px 20px 20px rgb(121, 192, 192);
+}
+.signin {
+  margin-top: 30px;
+}
+.email {
+  margin-top: 20px;
+}
+
+.password {
+  margin-top: 25px;
+}
+.Forget {
+  align-self: flex-end;
+  margin-right: 30px;
+  font-size: small;
+  color: rgb(78, 20, 20);
+  font-weight: bold;
+}
+.Remember {
+  align-self: flex-start;
+  margin-left: 30px;
+  color: rgb(163, 178, 190);
+}
+.Sign {
+  margin-top: 45px;
+  background-color: brown;
+  border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.or {
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.Facebook {
+  display: inline;
+  background-color: rgb(35, 35, 85);
+  border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: 15px;
+}
+.Twitter {
+  display: inline;
+  background-color: rgb(77, 134, 207);
+  border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: 15px;
+}
+
+.need {
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-top: 50px;
+}
