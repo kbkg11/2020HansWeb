@@ -13,3 +13,11 @@ table.type01 td {
   background-color: gray;
   width: 100px;
 }
+.one {
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
