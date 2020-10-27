@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var date = new Date("2020-12-25 00:00:00");
+      var date1 = new Date();
+      var time = date - date1; //크리스마스 날짜에서 현재 날짜 빼기
+
+      var dayS = 1000 * 60 * 60 * 24; //일을 구하기 위해 나눌 숫자
+      var dayT = time / dayS; //일 구하기
+      var day = Math.floor(dayT); //반올림
+
+      var dayH = time - day * dayS; //구해진 날짜에 일수빼기
+      var hoursS = 1000 * 60 * 60; //시간을 구하기 위해 나눌 숫자
+      var hoursT = dayH / hoursS; //시간 구하기
+      var hours = Math.floor(hoursT); //반올림
+
+      var hoursH = dayH - hours * hoursS; //구해진 일수에 시간빼기
+      var minuteS = 1000 * 60; //분을 구하기 위해 나눌 숫자
+      var minuteT = hoursH / minuteS; //분 구하기
+      var minute = Math.floor(minuteT); //반올림
+
+      var secondH = hoursH - minute * minuteS; //구해진 시간에 분빼기
+      var secondS = 1000; // 초를 구하기 위해 나눌 숫자
+      var secondT = secondH / secondS; //초 구하기
+      var second = Math.floor(secondT); //반올림
+
+      console.log(day + "일 " + hours + "시 " + minute + "분 " + second + "초");
+    </script>
+  </body>
+</html>

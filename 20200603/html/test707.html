@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Template fr Ex</title>
+    <style>
+      main {
+        display: grid;
+        height: 100vh;
+        grid-template:
+          "header header header header header" 1fr
+          "nav section section section aside" 5fr
+          "footer footer footer footer footer" 1fr / 1fr 2fr 2fr 2fr 1fr;
+        gap: 3px;
+      }
+      header {
+        background-color: aquamarine;
+        font-size: 33px;
+        color: aliceblue;
+        grid-area: header;
+      }
+      nav {
+        background-color: cornflowerblue;
+        font-size: 33px;
+        color: aliceblue;
+        grid-area: nav;
+      }
+
+      section {
+        background-color: pink;
+        font-size: 33px;
+        color: aliceblue;
+        grid-area: section;
+      }
+
+      aside {
+        background-color: lightblue;
+        font-size: 33px;
+        color: aliceblue;
+        grid-area: aside;
+      }
+
+      footer {
+        background-color: darkslategray;
+        font-size: 33px;
+        color: aliceblue;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>header</header>
+      <nav>nav</nav>
+      <section>section</section>
+      <aside>aside</aside>
+      <footer>footer</footer>
+    </main>
+  </body>
+</html>

@@ -1,9 +1,13 @@
 .top {
+  height: 60px;
   display: block;
-  padding-top: 0.1px;
-  padding-bottom: 0.1px;
-  padding-right: 30px;
   background-color: rgb(129, 158, 221);
+}
+.Admin {
+  font-size: 22px;
+  color: aliceblue;
+  display: inline-flex;
+  margin-left: 1650px;
 }
 .left {
   display: block;
@@ -13,7 +17,7 @@
   padding-top: 30px;
   padding-left: 20px;
   width: 290px;
-  height: 800px;
+  height: 910px;
 }
 
 .leftBtn {
@@ -26,11 +30,24 @@
 .AP {
   display: flex;
 }
+.select {
+  height: 17px;
+  font-size: small;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 5px;
+  border: 1px solid grey;
+  color: rgb(252, 252, 252);
+
+  background-color: rgb(149, 168, 231);
+
+  padding: 5px 15px 5px 15px;
+}
 .center {
-  width: 1480px;
-  height: 800px;
+  width: 1490px;
+  height: 900px;
   background-color: rgb(221, 228, 241);
-  padding-left: 120px;
+  padding-left: 130px;
   padding-top: 40px;
 }
 .box {
@@ -44,17 +61,41 @@
 }
 .table td {
   padding: 10px;
-  border: 1px solid rgb(14, 13, 13);
+  border: 1px solid rgb(168, 162, 162);
 }
 .img {
-  display: inline-block;
-  position: sticky;
-  top: 30px;
-  width: 80px;
-  height: 80px;
+  position: fixed;
+  margin-bottom: 5px;
+  left: 20px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
   background: blue;
 }
 .btn {
+  margin-top: 30px;
+  margin-left: 450px;
   display: flex;
-  justify-content: center;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.bt {
+  color: rgb(253, 253, 253);
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(158, 155, 155);
+}
+
+.bt10 {
+  color: rgb(253, 253, 253);
+  padding: 5px 6px 5px 6px;
+  background-color: rgb(158, 155, 155);
+}
+
+.bt:hover {
+  background-color: rgb(96, 128, 235);
+}
+
+.bt10:hover {
+  background-color: rgb(96, 128, 235);
 }

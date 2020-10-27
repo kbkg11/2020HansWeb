@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display grid Ex</title>
+    <style>
+      .parent {
+        display: grid;
+        height: 200vh;
+        /* 
+            만약 반응형으로 디자인을 해서 %나 fr을 이용한다면 minmax를 통해 작은 화면으로 축소될경우 
+            더 이상 줄어들지 않도록 최소값을 설정할 수 있다. 
+            minmax(최소보장값, 가장 큰사이즈일때 값)
+        */
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+        grid-template-rows: repeat(3, 180px);
+        gap: 3px;
+        /* 
+            justify-items가 grid안에 각각의 셀을 컨트롤했다면
+            justify-content는 grid자체를 컨트롤한다.
+            center은 가운데로 정렬하고 기존의 flex처럼 space-between, space-around도 제공한다.
+            align-content도 제공한다.
+            items와 마찬가지로 place-content도 제공한다.
+        */
+        justify-content: center;
+        align-content: center;
+        /* 
+            설정한 height를 넘어서는 데이터가 들어오면 처음에는 설정한대로 잘 들어가던 높이값이 height에 맞춰서 줄어든다. 
+            grid-auto-rows를 사용한다면 사이즈를 넘어가는 데이터도 설정한 값에 맞춰 그려준다. 
+            grid-auto-flow는 flex에서 row, column설정을 해주듯 90도 회전을 하여 가로와 세로가 바뀌게 된다.    
+        */
+        grid-auto-rows: 180px;
+      }
+
+      .child {
+        font-size: 50px;
+        background-color: midnightblue;
+        color: coral;
+        /* 
+            place-item은 모든 셀에 적용되는데 각각 셀마다 다른 설정을 하고 싶다면
+            자식 클래스에서 align-self, justify-self, place-self 를 이용해 똑같은 설정을 특정 클래스에만 할 수 있다.
+         */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div>
+      <div class="child">13</div>
+      <div class="child">14</div>
+      <div class="child">15</div>
+      <div class="child">16</div>
+      <div class="child">17</div>
+      <div class="child">18</div>
+      <div class="child">19</div>
+      <div class="child">20</div>
+      <div class="child">21</div>
+      <div class="child">22</div>
+      <div class="child">23</div>
+      <div class="child">24</div>
+      <div class="child">25</div>
+      <div class="child">26</div>
+      <div class="child">27</div>
+      <div class="child">28</div>
+      <div class="child">29</div>
+      <div class="child">30</div>
+      <div class="child">31</div>
+      <div class="child">32</div>
+      <div class="child">33</div>
+      <div class="child">34</div>
+      <div class="child">35</div>
+      <div class="child">36</div>
+      <div class="child">37</div>
+      <div class="child">38</div>
+      <div class="child">39</div>
+      <div class="child">40</div>
+      <div class="child">41</div>
+      <div class="child">42</div>
+      <div class="child">43</div>
+      <div class="child">44</div>
+      <div class="child">45</div>
+      <div class="child">46</div>
+      <div class="child">47</div>
+      <div class="child">48</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="add_row()">행 추가하기</button>
+    <button onclick="delete_row()">행 삭제하기</button>
+    <hr />
+    <table>
+      <thead>
+        <th>테이블</th>
+        <th>헤더</th>
+        <th>세번째</th>
+      </thead>
+      <tbody id="my-tbody"></tbody>
+    </table>
+    <script src="../js/jstable.js"></script>
+  </body>
+</html>
