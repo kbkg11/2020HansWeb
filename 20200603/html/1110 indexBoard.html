@@ -7,6 +7,82 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <title>table modal Ex</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script> 
+      $(document).ready(function(){ 
+      var sw; 
+
+      $('#open').click(function(){ //오픈 버튼을 눌렀을 경우
+      $('.modal').removeClass('hidden');
+      var sw = 0;
+      })
+      
+      $('.modifyBtn').click(function(){ //수정 버튼을 눌렀을 경우
+      $('.modal').removeClass('hidden');
+      var sw = 1;
+      })
+
+      $('#modalWriteSubmitBtn').click(function(){ // ✔️ 버튼을 눌렀을 경우
+      if(sw == 1){
+        
+      }else{
+        $('.modal').addClass('hidden');
+      var my_tbody = document.getElementById("my-tbody");
+      var row = my_tbody.insertRow(my_tbody.rows.length);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      var cell5 = row.insertCell(4);
+      var cell6 = row.insertCell(5);
+      cell1.innerHTML = "<input type='checkbox'/>";
+      
+      const writeCategory = document.getElementById("write-category");
+      cell2.innerHTML = writeCategory.options[writeCategory.selectedIndex].text;
+      const writeTitle = document.getElementById("write-title");
+      cell3.innerHTML = writeTitle.value;
+      const writeWriter = document.getElementById("write-writer");
+      cell4.innerHTML = writeWriter.value;
+      let today = new Date();
+      let year = today.getFullYear();
+      let month = today.getMonth() + 1;
+      let date = today.getDate();
+      cell5.innerHTML = year + "-" + month + "-" + date;
+      }
+    
+       
+ 
+
+      })
+      
+      
+      $('#modalWriteCloseBtn').click(function(){ // ❌ 버튼을 눌렀을 경우
+      $('.modal').addClass('hidden');
+      })
+
+
+
+    $('.delBtn').click(function(){ //선택된 테이블 삭제
+            alert("확인");
+                           
+          
+            $('input[type=checkbox]:checked').each(function(index){               
+                     
+                   
+                   var clickedRow = $(this).parent().parent();   
+                   var clickedRowNext = clickedRow.next("tr");                     
+                   clickedRow.remove();
+                   clickedRowNext.remove();                        
+                                     
+                              
+      }      );        
+   
+  })
+
+
+      })
+    </script>
   </head>
 
   <body>
@@ -40,12 +116,12 @@
         <thead>
         <tr>
           <td><input type="checkbox" /></td>
-          <td>유머</td>
-          <td>제목11111111111111111111111111111111111111111</td>
-          <td>fkfkfk9</td>
+          <td id="a">유머</td>
+          <td id="b">제목11111111111111111111111111111111111111111</td>
+          <td id="c">fkfkfk9</td>
           <td>2019-3-1</td>
           <td>
-            <input type="button" value="수정" class="modifyBtn" id="modifyBtn"  onclick="modify(this)"/>
+            <input type="button" value="수정" class="modifyBtn" id="modifyBtn"/>
 
           <input
               type="button"
@@ -62,7 +138,7 @@
           <td>fkfkfk9</td>
           <td>2019-2-1</td>
           <td>
-            <input type="button" value="수정" class="modifyBtn" id="modifyBtn"  onclick="modify(this)"/><input
+            <input type="button" value="수정" class="modifyBtn" id="modifyBtn" /><input
             type="button"
             value="삭제"
             class="delBtn"
@@ -79,7 +155,7 @@
           <td>fkfkfk9</td>
           <td>2019-1-1</td>
           <td>
-            <input type="button" value="수정" class="modifyBtn" id="modifyBtn"  onclick="modify(this)"/>
+            <input type="button" value="수정" class="modifyBtn" id="modifyBtn"  />
           <input
             type="button"
             value="삭제"
@@ -135,16 +211,9 @@
       </div>
     </div>
 
-    <select id="seledtBox" onchange="alert(this.value)">
-      <option id="0" value=1>value1</option>
-      <option id="1" value=2>value2</option>
-      <option id="2" value=3>value3</option>
-      <option id="3" value=4>value4</option>
-      <option id="4" value=5>value5</option>
-      </select>
 
-    <!-- <script src="../js/index.js"></script> -->
-    <script src="../js/indes.js"></script>
+    <!-- < src="../js/index.js"></> -->
+   
   </body>
 </html>
 

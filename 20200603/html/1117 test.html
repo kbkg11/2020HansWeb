@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/1117 test.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script>
+        $(document).ready(function(){
+
+            
+         
+            $(".submit").click(function(){
+                var inputId = $(".id").val();
+                var inputpw = $(".pw").val();
+                var inputpwre = $(".pw_re").val();
+                var inputname = $(".name").val();
+                var inputemail = $(".email").val();
+            
+               if(inputId == ""){
+                alert("아이디가 입력 되지 않았습니다!")
+               }else if(inputpw ==""){
+                alert("비밀번호가 입력되지 않았습니다!")
+               }else if(inputpwre ==""){
+                alert("비밀번호확인이 입력되지 않았습니다!")
+               }else if(inputpw != inputpwre){
+                alert("비밀번호확인이 올바르지 않습니다!")
+               }else if(inputname ==""){
+                alert("이름이 입력되지 않았습니다!")
+               }else if(inputemail ==""){
+                alert("이메일이 입력되지 않았습니다!")
+               }else{
+                alert("환영합니다!")
+                $('.user_id').text(inputId);
+                 $(".user_pw").text(inputpw);
+                  $(".user_name").text(inputname);
+                 $(".user_email").text(inputemail);
+               } 
+            
+           })   
+
+
+        });
+    </script>
+    
+    <body>
+       
+    <div class="main">
+        <div class="cont">
+           
+            <input type="text" class="id" placeholder="ID">
+            <input type="password" class="pw" placeholder="PW">
+            <input type="password" class="pw_re" placeholder="PW_RE">
+            <input type="text" class="name" placeholder="NAME">
+            <input type="text" class="email" placeholder="Email">
+            <input type="button" value="확인" class="submit">
+        </div>
+    </div>
+
+    <div class="user_mod">
+        <span>ID : </span>
+        <span class="user_id">null</span>
+        <span>PW : </span>
+        <span class="user_pw">null</span>
+        <span>NAME : </span>
+        <span class="user_name">null</span>
+        <span>Email : </span>
+        <span class="user_email">null</span>
+
+    </div>
+</body>
+</html>
